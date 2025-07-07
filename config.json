@@ -1,0 +1,28 @@
+{
+  "app": {
+    "title": "YouTube Live Streaming Studio",
+    "version": "2.0.0",
+    "debug": false
+  },
+  "streaming": {
+    "default_resolution": "1080p",
+    "default_framerate": "30fps",
+    "default_bitrate": "3000k",
+    "buffer_size": "6000k",
+    "max_concurrent_streams": 5
+  },
+  "database": {
+    "path": "streaming_logs.db",
+    "backup_enabled": true,
+    "backup_interval_hours": 24
+  },
+  "youtube": {
+    "api_quota_limit": 10000,
+    "rate_limit_per_minute": 100
+  },
+  "monitoring": {
+    "health_check_interval": 30,
+    "metrics_collection_interval": 60,
+    "log_retention_days": 30
+  }
+}
